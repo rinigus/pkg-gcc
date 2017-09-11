@@ -12,6 +12,8 @@ BuildRequires: gcc-c++ tar gmp-devel mpfr-devel mpc-devel libstdc++-devel
 #Requires:
 
 %define debug_package %{nil}
+%define __provides_exclude ^lib.*$
+%define __requires_exclude ^libstdc|libgcc*$
 
 %description
 The gcc package contains the GNU Compiler Collection. This package installs
